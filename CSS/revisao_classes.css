@@ -1,0 +1,66 @@
+body{
+    font-family: "Rubik", sans-serif;
+    color: #2b2a2a;
+    margin: 0;
+}
+
+.linksMenu a{
+    color: #656565;
+    text-decoration: none; /* Remove o traçado do link*/
+    margin-right: 10px;
+    font-size: 10px;
+}
+
+.linksMenu a:hover{
+    text-decoration: underline;
+    color: #080808;
+    
+}
+
+.abertura{
+    background: #D2C2FF;
+    background: linear-gradient(90deg,rgb(207, 205, 1) 0%, rgba(202, 184, 242, 1) 0%, rgb(162, 211, 235) 9%);
+    padding: 180px 100px; /* Aumenta o espaçamento por DENTRO*/
+}
+
+.abertura p{
+    width: 30%; /* Muda a LARGURA do elemento */
+    font-size: 17px;    
+}
+
+.abertura h2{
+    font-size: 28px;
+}
+
+.botaoPrincipal{
+    background: #0867BB;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 20px;
+}
+
+.botaoPrincipal:hover{
+    background-color: #075da6;
+    transition: 0.3s; /* Animação suave quando passar o mouse */
+}
+
+.cardProduto{
+    background: #ccc;
+    border: 1px solid #eee;
+    box-shadow: 1px 2px 3px #000; /* Sombra */
+    width: 300px;
+    margin: 20px;  
+
+}
+
+.cardConteudo{
+    padding: 30px;
+}
+
+.deck{
+    display: flex;
+    flex-wrap: wrap;
+}
+
