@@ -39,6 +39,7 @@ body{
     border-radius: 10px;
     border: none;
     padding: 10px 20px;
+    font-weight: bold;
 }
 
 .botaoPrincipal:hover{
@@ -56,7 +57,7 @@ body{
 }
 
 .cardConteudo{
-    padding: 30px;
+    padding: 20px;
 }
 
 .deck{
@@ -64,3 +65,32 @@ body{
     flex-wrap: wrap;
 }
 
+.cardConteudo button{
+    width: 100%;
+}
+
+.cardProduto img{
+    width: 100%;
+}
+
+.cardTitulo{
+    font-weight:800 ;
+    font-size: 20px;
+    margin: 0;
+}
+
+.linksMenuEsq{
+    display: flex;
+    align-items: end;
+    color: #656565;
+    margin-right: 10px;
+    font-size: 10px;
+    justify-content: space-around;
+    gap: 10px;
+
+}
+
+.ducalaio{
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,23 @@
+
+
+.menu{
+    display: flex;
+    flex-direction: row; /* Direção do flex */
+    justify-content: space-around; /* Ajusta o espaçamento do conteúdo */
+    align-items: center;
+
+}
+
+.itensMenu{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.configuracaoMenu{
+    display: flex;
+    align-items: center;
+    gap: 30px
+}
+
+
