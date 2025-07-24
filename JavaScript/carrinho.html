@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1> Carrinho </h1>
+    <p> Esse é o seu carrinho de compras da loja</p>
+    <p> Quantidade de itens no carrinho: <span id="itensCarrinho">0</span> </p>
+    <button onclick="adicionarCarrinho()" > Adicionar </button>
+    <button onclick="verCarrinho()"> Ver carrinho </button>
+    <button onclick="remover()"> Remove </button>
+    <button onclick="limpar()"> Limpar </button>
+
+    <script>
+
+        // Variável global
+        let carrinho = 0 
+
+        function adicionarCarrinho(){
+            // Acumulo de variáveis
+            // carrinho = carrinho + 1 // Recebe ele memso +1
+            // carrinho += 1 // Operador +=
+            carrinho++ // Operador ++ (Só adiciona 1)
+            document.querySelector("#itensCarrinho").innerHTML = carrinho                
+        }
+        
+
+        function verCarrinho(){
+            alert("Itens no carrinho: " +carrinho)   
+        }
+
+        function remover(){
+            carrinho-- 
+            document.querySelector("#itensCarrinho").innerHTML = carrinho 
+        }
+
+        function limpar(){
+            carrinho = 0
+            document.querySelector("#itensCarrinho").innerHTML = carrinho 
+        }
+    
+
+
+    </script>
+
+</body>
+</html>

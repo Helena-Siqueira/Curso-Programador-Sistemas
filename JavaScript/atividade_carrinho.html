@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1> Mercearia do seu Ciro </h1>
+
+    <p> Arroz - R$ 15,90 </p>
+    <button onclick="adicionarArrozCarrinho()"> Adicionar </button>
+    <button onclick="removerArrozCarrinho()"> Remover </button>
+
+    <hr/>
+
+    <p> Feijão - R$ 11,40 </p>
+    <button onclick="adicionarFeijaoCarrinho()" > Adicionar </button>
+    <button onclick="removerFeijaoCarrinho()"> Remover </button>
+
+    <hr/>
+
+    <h2> Seu carrinho </h2>
+    <button onclick="verCarrinho()"> Ver carrinho</button>
+    <button onclick="limparCarrinho()"> Limpar Carrinho </button>
+
+
+    <script>
+
+    
+        let carrinho = 0
+        let precoArroz = 15.90
+        let precoFeijao = 11.40
+
+        let qntArroz = 0
+        let qntFeijao = 0
+
+    
+
+
+        alert("Total arroz: R$ " + totalArroz + "Total feijão: R$ " + totalFeijao)
+
+
+        function adicionarArrozCarrinho(){
+            carrinho++
+            
+        }
+                
+        function verCarrinho(){
+             alert("Itens no carrinho: " +carrinho)
+                    
+        }
+
+        function removerArrozCarrinho(){
+            carrinho--
+        }
+
+        function limparCarrinho(){
+             carrinho = 0
+        }
+
+        function adicionarFeijaoCarrinho(){
+            carrinho++
+        }
+
+        function removerFeijaoCarrinho(){
+            carrinho--
+        }
+
+        
+        
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>
