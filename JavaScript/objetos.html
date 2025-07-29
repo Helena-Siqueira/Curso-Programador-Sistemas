@@ -10,16 +10,12 @@
     <h1> Objetos </h1>
     <p> como criar um objeto JSON em JavaScript. </p>
 
-    
-    <br/>
+
     <input id="inputNome"placeholder="Digite o nome"/>
-    <br/>
     <br/>
     <input id="inputSenha" placeholder=" Digite a senha"/>
     <br/>
-    <br/>
     <input id="inputemail" placeholder="Digite o email"/>
-    <br/>
     <br/>
     <button onclick="salvar()"> Criar</button>
 
@@ -28,7 +24,6 @@
         // Objeto de usuário 
         let usuario ={
             id: 0,
-            nome: "",
             nome: "",
             senha: "",
             email: "",
@@ -52,9 +47,7 @@
             usuario.id = 1
             usuario.criado_em = new Date()
 
-
-            // Mostrar os dados no console
-
+            // Mostrar usuário
             console.log(usuario)
 
 
