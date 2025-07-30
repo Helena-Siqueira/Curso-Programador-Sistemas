@@ -66,4 +66,21 @@
 
 
 
+let numero = parseInt(prompt("Digite o mês de hospedagem"))
 
+if(numero >= 10){
+    alert("Disponivel para reserva")
+}else{
+    alert("Este mês não está disponivel para reserva")
+}
+
+let quarto = 150 
+let adulto = 85 
+
+let maiorIdade = parseInt(prompt("Digite a quantidade de adultos: "))
+
+if(numero <= 0){
+    alert("")
+}else{
+    alert("Este mês não está disponivel para reserva")
+}

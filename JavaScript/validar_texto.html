@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input placeholder=" Digite o nome "/> 
+    <br/>
+    <br/>
+    <input placeholder="Digite a idade "/> 
+    <br/>
+    <br/>
+    <input placeholder="Digite o CPF"/> 
+    <br/>
+    <br/>
+    <input placeholder=" Digite o email"/> 
+    <br/>
+    <br/>
+    <button onclick="validarDados()"> Salvar </button>
+    
+
+    <script>
+
+        function validarDados(){
+
+            let  nome = document.querySelectorAll("input")[0].value
+            let idade = parseInt(document.querySelectorAll("input")[1].value)
+            let cpf = document.querySelectorAll("input")[2].value
+            let email = document.querySelectorAll("input")[3].value
+
+
+            // LENGTH  conta quantos caracteres tem na variável
+            if( nome.length <= 3 ){
+                alert("O nome digitado é muito curto...")
+                return
+            }   
+
+            // Valida se não é número
+            if( isNaN(idade) == true){
+                alert("Digite uma idade válida...")
+                return
+                
+            }
+
+            if( idade > 120){
+                alert("Idade inválida, deve ser menor que 120")
+                return
+            }
+
+            // Validar o CPF com o comparador de DIFERENTE !=
+            if( cpf.length != 11 ){
+                alert("CPF Inválido, digite CPF válido")
+                return
+            }
+
+            if( email.includes("@") == false ){
+                alert("Email inválido")
+                return
+            }
+
+            if( email.includes(".") & ("@")){
+                alert("Email inválido")
+                return
+            }
+
+            alert("Cadastro realizado com sucesso!")
+
+        }
+        
+
+    </script>
+    
+</body>
+</html>
